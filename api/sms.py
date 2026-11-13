@@ -182,7 +182,7 @@ def send_bulk_sms(
             if not customer.phone_number:
                 continue
 
-            norm_phone = normalize_ghana_phone(customer.phone_number)
+            norm_phone = normalize_phone(customer.phone_number)
             if not is_valid_phone(norm_phone):
                 continue
 
